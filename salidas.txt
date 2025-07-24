@@ -1,0 +1,42 @@
+=== Método de Planos de Corte ===
+Ingrese el número de variables: 2
+
+Ingrese la función objetivo (maximizar o minimizar):
+Coeficiente para x1: 3
+Coeficiente para x2: 2
+¿Maximizar (max) o Minimizar (min)? max
+
+Ingrese el número de restricciones: 2
+
+Restricción 1:       
+Coeficiente para x1: 2
+Coeficiente para x2: 1
+Desigualdad (<=, >=, =): <=
+Término independiente: 4
+
+Restricción 2:       
+Coeficiente para x1: 1
+Coeficiente para x2: 2
+Desigualdad (<=, >=, =): <=
+Término independiente: 3
+
+--- Iteración 1 ---
+
+Resolviendo relajación lineal con scipy.optimize.linprog...
+Solución relajada: {'x1': np.float64(1.6666666666666667), 'x2': np.float64(0.6666666666666666)}
+Solución no entera. Generando plano de corte...
+
+Nuevo plano de corte: x1 <= 1
+
+--- Iteración 2 ---
+
+Resolviendo relajación lineal con scipy.optimize.linprog...
+Solución relajada: {'x1': np.float64(1.0), 'x2': np.float64(1.0)}
+¡Solución óptima encontrada!
+
+Solución óptima entera encontrada:
+x1 = 1.0
+x2 = 1.0
+Valor de la función objetivo: 5.0
+
+Generando gráfico...
